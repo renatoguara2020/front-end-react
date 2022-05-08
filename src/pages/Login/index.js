@@ -10,7 +10,6 @@ const Login = () =>{
         userName: '', 
         password: '',
         zipCode: '',
-        checkBox: '',
     });
 
     const dadosLogin = e => setUsuario({...usuario, [e.target.name]: e.target.value});
@@ -121,7 +120,7 @@ const Login = () =>{
           </div>
           
           <div className="col-12">
-            <button className="btn btn-outline-success" type="submit">Submit form</button>
+            <button className="btn btn-outline-warning" type="submit">Submit form</button>
           </div>
         </form>
       </div>

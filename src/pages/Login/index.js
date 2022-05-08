@@ -10,7 +10,7 @@ const Login = () =>{
         userName: '', 
         password: '',
         zipCode: '',
-        email: '',
+        checkBox: '',
     });
 
     const dadosLogin = e => setUsuario({...usuario, [e.target.name]: e.target.value});
@@ -23,6 +23,7 @@ const Login = () =>{
         console.log(usuario.password);
         console.log(usuario.estadosBrasil);
         console.log(usuario.zipCode);
+        console.log(usuario.checkBox);
 
         const headers = {
             'Content-Type': 'application/json'
@@ -120,7 +121,7 @@ const Login = () =>{
           </div>
           <div className="col-12">
             <div className="form-check">
-              <input className="form-check-input" type="checkbox"   name="checkBox" onChange={dadosLogin}/>
+              <input className="form-check-input" type="checkbox"   name="checkBox" id ="invalidCheck"onChange={dadosLogin}/>
               <label className="form-check-label" for="invalidCheck">
                 Agree to terms and conditions
               </label>

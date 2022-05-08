@@ -119,17 +119,7 @@ const Login = () =>{
               Please provide a valid zip.
             </div>
           </div>
-          <div className="col-12">
-            <div className="form-check">
-              <input className="form-check-input" type="checkbox"   name="checkBox" id ="invalidCheck"onChange={dadosLogin}/>
-              <label className="form-check-label" for="invalidCheck">
-                Agree to terms and conditions
-              </label>
-              <div className="invalid-feedback">
-                You must agree before submitting.
-              </div>
-            </div>
-          </div>
+          
           <div className="col-12">
             <button className="btn btn-outline-success" type="submit">Submit form</button>
           </div>

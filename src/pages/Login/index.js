@@ -43,7 +43,7 @@ const Login = () =>{
           <div className="col-md-4">
             <label htmlFor="validationCustomUsername" className="form-label">Username</label>
             <div className="input-group has-validation">
-              <span className="input-group-text" id="inputGroupPrepend">@</span>
+              <span className="input-group-text" id="inputGroupPrepend">@UserName</span>
               <input type="text" className="form-control" name="userName"  onChange={dadosLogin} placeholder="Digite seu UserName"/>
               <div className="invalid-feedback">
                 Please choose a username.
